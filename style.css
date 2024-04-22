@@ -1,0 +1,332 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/*color variables*/
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% "Quicksand", sans-serif;
+	line-height: 1.88889;
+	color: #fff; 
+	background: #303942 ; 
+	margin: 0 ; 
+	padding: 0;
+	}
+
+header h2, h1{
+	color: #6dd1ef
+}
+
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	font-family: "Quicksand", sans-serif;
+	
+	}
+
+h3 { 
+	font: italic normal 1.9em 'Norse', sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #b6b8ac;
+	padding-left: 25%;
+	
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #6dd1ef;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: white;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: black;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	
+	margin: 0; 
+	
+	right: 20px;
+	}
+
+.intro { 
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 { 
+	display: block;
+	width: 219px;
+	height: 87px;
+	float: inherit;
+	font-family: 'Norse', sans-serif;
+	text-indent: 100%;
+	white-space: nowrap;
+	font-size: 8rem;
+	}
+header h2 { 
+	float: inline-start;
+	font-family: 'Norse', sans-serif;
+	text-indent: 100%;
+	white-space: nowrap;
+	font-size: 3rem;
+	font-weight: lighter;
+	margin: 10px 0;
+	color: white;
+	}
+header {
+	padding-top: 20px;
+	padding-left: 15.5rem;
+	background: url("images/viking.png") no-repeat;
+	background-size: cover; 
+	height: 911px;
+	width: 90%;
+}
+.summary {
+	margin: 0 30rem; 
+	width: 800px; 
+	position: relative;
+	top: 5px;
+	
+	}
+	
+.summary p {
+	font: italic 1.5em/1.7 quicksand; 
+	text-align: center;
+	}	
+
+.preamble {
+	clear: left; 
+	padding: 0px 10px 0 10px;
+	position: absolute;
+	top: 68rem;
+	left: 31rem;
+	margin: 0 auto;
+	width: 900px;
+	}
+
+.summary a:link{
+	background: #B6B8AC;
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+	margin: 10px;
+}	
+
+.summary a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+.supporting {	
+	margin: 0 auto;
+	margin-bottom: 40px;
+	top: 220px;
+	position: relative;
+	width: 900px;
+}
+
+
+footer { 
+	text-align: center; 
+	bottom: 0;
+	margin-top: 30px;
+	}
+
+footer a:link{
+	background: #B6B8AC;
+	display: inline-block;
+	width: 90px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	line-height: 30px;
+}
+
+footer a:hover{
+	color: black;
+	text-decoration: none;
+}
+
+footer a:link, footer a:visited { 
+	margin-right: 20px; 
+	}
+
+.sidebar {
+	clear: left;
+	position: absolute; 
+	left: 50px; 
+	top: 770px;
+	}
+
+.sidebar .wrapper { 
+	font: 15px verdana, sans-serif; 
+	padding: 10px; 
+	margin-top: 150px; 
+	width: 230px; 
+	}
+.sidebar h3.select { 
+	color: #b6b8ac;
+	margin: 10px 0 5px 0; 
+	}
+.sidebar h3.archives { 
+	
+	margin: 25px 0 5px 0; 
+	width:57px; 
+	height: 14px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	}
+.sidebar h3.resources { 
+	margin: 25px 0 5px 0; 
+	width:63px; 
+	height: 10px; 
+	text-indent: 100%;
+	white-space: nowrap;
+	}
+
+
+.sidebar ul {
+	margin: 0;
+	padding: 0;
+	}
+.sidebar li {
+	line-height: 1.3em; 
+	
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+.sidebar li a:link {
+	color: #b6b8ac;
+	}
+.sidebar li a:visited {
+	color: #6dd1ef;
+	}
+.sidebar li a:hover{
+	color: black;
+	text-decoration: none;
+}	
+
+.sidebar .design-selection ul,
+.sidebar .design-archives ul,
+.sidebar .zen-resources ul {
+  list-style-type: none; 
+  padding-left: 0; 
+}
+
+
+.sidebar .design-selection ul li:before,
+.sidebar .design-archives ul li:before,
+.sidebar .zen-resources ul li:before {
+  content: ""; 
+  display: inline-block; 
+  width: 16px; 
+  height: 16px; 
+  background-image: url("images/Ellipse 1.png"); 
+  background-repeat: no-repeat; 
+  background-size: contain; 
+	margin-right: 5px; 
+}
+
+.sidebar h3 {
+  display: flex;
+  align-items: center; 
+  justify-content: center; 
+}
+
+.extra1, .extra2, .extra3{
+	position: absolute;
+}
+
+.extra1 {
+	top: 930px; 
+	right: 10px; 
+	}
+
+.extra2 {
+	top: 105rem; 
+	left: 100px; 
+	
+	}
+.extra3{
+	top: 105rem;
+	right: 50px;
+}
+
+@media (max-width: 1440px){
+	header{
+		background: url(images/other\ viking.png) no-repeat;
+		margin: 50px 0 ;
+	}
+
+	header h1{
+		font-size: 5rem;
+		margin-left: 50px;
+		margin-bottom: 50;
+	}
+	header h2{
+		font-size: 2rem;
+		margin-left: 60px;
+	}
+	.summary, .preamble, .supporting{
+	width: 600px;
+	}		
+	.summary{
+		margin: 0 20rem;
+		top: -101px;
+	}
+	.preamble{
+	width: 600px;
+	left: 24rem;
+	top: 67.5rem;
+	}
+	.supporting{
+	right: -0.4rem;
+	top: 8.5rem;
+	}
+
+	.extra1{
+		left: 59.5rem;
+	}
+
+	.extra3{
+		left: 62.5rem;
+	}
+
+	.extra2{
+		left: .2rem;
+	}
+
+	.sidebar{
+		left:10px;
+	}
+}
+
